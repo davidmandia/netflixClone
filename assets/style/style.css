@@ -93,3 +93,10 @@ body {
     font-size:14px;
     font-weight: 400;
 }
+
+.errorMessage {
+    color: #f00;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}

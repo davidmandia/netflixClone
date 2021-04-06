@@ -26,6 +26,13 @@ if (isset($_POST["submitButton"])) {
     }
 }
 
+
+function getInputValue($name) {
+    if(isset($_POST[$name])) {
+        echo $_POST[$name];
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +60,7 @@ if (isset($_POST["submitButton"])) {
             <form method="POST">
                 <?php echo $account->getError(Constants::$loginFailed); ?>
 
-                <input type="text" placeholder="Username" name="username" required>
+                <input type="text" placeholder="Username" name="username" value="<?php getInputValue("username"); ?>" required>
                 <input type="password" placeholder="Password" name="password" required>
                 <input type="submit" value="SUBMIT" name="submitButton">
 

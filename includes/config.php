@@ -10,8 +10,12 @@
     try {
         $con = new PDO("mysql:dbname=davidflix;host=localhost:3307", "root", "secret");
         //output the error to 
-        $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+        $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $con->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         
-    } catch (PDOException $e) {
-        exit("Connection failed: ". $e->getMessage());
+    } catch (Exception $e) {
+
+        echo 'Exception -> ';
+    var_dump($e->getMessage());
     }

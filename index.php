@@ -4,22 +4,8 @@ require_once("includes/header.php");
 $preview = new PreviewProvider($con, $userLoggedIn);
 
 echo $preview->createPreviewVideo(null);
-?>
 
 
-<!DOCTYPE html>
-<html lang="en">
+$containers = new CategoryContainers($con, $userLoggedIn);
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-
-</body>
-
-</html>
+echo $containers->showAllCategories();

@@ -60,7 +60,7 @@ function getInputValue($name)
 
 
             <div class="header">
-                <img src="assets/images//8c63c84e0ddcb9df7e7b598a09f54af5.png" title="Logo" alt="Site Logo" />
+                <img src="assets/images/logo.png" title="Logo" alt="Site Logo" />
 
                 <h3>Sign Up</h3>
                 <span>to continue to DavidFlix</span>

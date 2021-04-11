@@ -10,6 +10,7 @@
         public static $passwordsDontMatch = "Password do not match";
         public static $passwordLength = "Password must be between 5 and 25 character";
         public static $loginFailed = "Your username or password was incorrect";
+        public static $passwordIncorrect = "Your old password was incorrect";
 
 
         
